@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 id="heading" class="text-3xl font-bold tracking-tight m-10">Todo APP</h1>
+
+  <div class="flex flex-row gap-4 m-10">
+  <input id="task-input" type="text" placeholder=" Enter your task" class="border border-gray-200 bg-gray-100 p-2 rounded-lg">
+  <button id="add-task-button" onclick="addTask()" class="bg-black hover:bg-slate-500 text-white px-3 py-2 rounded-full">Add Task</button>
+  <button id="delete-all-button" onclick="deleteAll()" class="bg-red-700 hover:bg-red-500 text-white px-3 py-2 rounded-full">Delete All</button>
+  </div>
+
+  <div class="flex flex-col gap-3 m-16">
+    <p>Here are your todos :
+      <span id="total-task"></span>
+    </p>
+  <ul id="task-list"></ul>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
